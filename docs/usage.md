@@ -120,10 +120,10 @@ int main() {
 
   while(true) {
     frame = cv::Scalar(49, 52, 49);
-    cvui::text(frame, x, y, "Hello world!");
+    cvui::text(frame, 10, 10, "Hello world!");
 
     // Show window content
-    cvui::imshow(WINDOW1_NAME, frame);
+    cvui::imshow(WINDOW_NAME, frame);
 
     if (cv::waitKey(20) == 27) {
       break;
